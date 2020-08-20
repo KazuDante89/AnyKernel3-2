@@ -4,13 +4,14 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Predator Kernel by sohamsen@xda
+kernel.string=[EAS]Simple-Kernel by KazuDante
 do.devicecheck=1
 do.modules=0
+do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
 device.name1=lavender
-supported.versions=9 - 10
+supported.versions=
 supported.patchlevels=
 '; } # end properties
 
@@ -19,23 +20,20 @@ block=/dev/block/bootdevice/by-name/boot;
 is_slot_device=0;
 ramdisk_compression=auto;
 
-
 ## AnyKernel methods (DO NOT CHANGE)
 # import patching functions/variables - see for reference
 . tools/ak3-core.sh;
 
-
-## AnyKernel file attributes
-
+# Extra
+ui_print " " "Installing Simple-Kernel EAS Magisk module"
+ui_print " " "________Thanks to Uvera & Ratoriku_________"
+rm -rf /data/adb/modules/barairo;
+cp -rf $home/magisk_module /data/adb/modules/barairo;
 
 ## AnyKernel install
-dump_boot;
+split_boot;
 
-# begin ramdisk changes
-
-
-# end ramdisk changes
-
-write_boot;
+flash_boot;
+flash_dtbo;
 ## end install
 
