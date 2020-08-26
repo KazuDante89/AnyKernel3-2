@@ -25,8 +25,8 @@ ramdisk_compression=auto;
 . tools/ak3-core.sh;
 
 # Extra
-ui_print " " "Installing Simple-Kernel EAS Magisk module"
-ui_print " " "________Thanks to Uvera & Ratoriku_________"
+ui_print " " " Installing EAS Magisk module"
+ui_print " " " Thanks to Uvera "
 rm -rf /data/adb/modules/barairo;
 cp -rf $home/magisk_module /data/adb/modules/barairo;
 
