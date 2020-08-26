@@ -438,4 +438,3 @@ if [ "$(file_getprop anykernel.sh do.cleanup)" == 1 ]; then
 fi;
 
 ui_print " " "Simple-Kernel locked-n-loaded";
-ui_print " " "____Rock-on metalheads____";
