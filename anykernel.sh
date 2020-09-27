@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=[EAS]Simple-Kernel by KazuDante
+kernel.string= Noobie-Kernel by KazuDante
 do.devicecheck=1
 do.modules=0
 do.systemless=1
