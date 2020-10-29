@@ -25,8 +25,8 @@ ramdisk_compression=auto;
 . tools/ak3-core.sh;
 
 # Extra
-ui_print " " " Installing EAS Magisk module"
-ui_print " " " Thanks to Uvera "
+ui_print " " " Installing EAS Pixel Power HAL Magisk module"
+ui_print " " " Thanks to OdSazib, kenny3fcb "
 rm -rf /data/adb/modules/barairo;
 cp -rf $home/magisk_module /data/adb/modules/barairo;
 
@@ -36,4 +36,3 @@ split_boot;
 flash_boot;
 flash_dtbo;
 ## end install
-
