@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string= Noobie-Kernel by KazuDante
+kernel.string= Akuma-Kernel by KazuDante89
 do.devicecheck=1
 do.modules=0
 do.systemless=1
@@ -23,12 +23,6 @@ ramdisk_compression=auto;
 ## AnyKernel methods (DO NOT CHANGE)
 # import patching functions/variables - see for reference
 . tools/ak3-core.sh;
-
-# Extra
-ui_print " " " Installing EAS Pixel Power HAL Magisk module"
-ui_print " " " Thanks to OdSazib, kenny3fcb "
-rm -rf /data/adb/modules/barairo;
-cp -rf $home/magisk_module /data/adb/modules/barairo;
 
 ## AnyKernel install
 split_boot;

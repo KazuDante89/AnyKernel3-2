@@ -1,6 +1,0 @@
-id=pixelpowerhal
-name=Pixel PowerHAL for SDM660
-version=v2
-versionCode=20201015
-author=kenny3fcb,OdSazib
-description=Port EAS PowerHAL from Pixel device
